@@ -1,0 +1,33 @@
+<html>
+  <meta charset="utf-8">
+  <title>Lab Conditions by RPi</title>
+  <meta http-equiv="refresh" content="10">
+  <meta name="description" content="Lab conditions - RPi">
+  <meta name="author" content="Peter Dalmaris">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/static/css/normalize.css">
+  <link rel="stylesheet" href="/static/css/skeleton.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/static/images/favicon.png">
+</head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="two-third column" style="margin-top: 5%">
+            <h1 style="text-align: center">Real time lab conditions</h1>
+	    <h2>Temperature: <span style="font-size: 0.9em;">{{"{0:0.1f}".format(temp) }}°C / {{"{:0.1f}".format(temp * 9/5 + 32)}}°F</span></h2>
+	    <h2>Humidity:  <span style="font-size: 0.9em;">{{"{0:0.1f}".format(hum)}}%</span></h2>  
+            <p>This page refreshes every 10 seconds</p>
+        </div>   
+      </div>
+    </div>           
+  </body>  
+</html>
